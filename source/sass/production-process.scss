@@ -1,0 +1,28 @@
+.production-process__header {
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: $color-black;
+}
+
+.production-process__description {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: $color-grey-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .production-process__header {
+    font-size: 20px;
+  }
+
+  .production-process__description {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

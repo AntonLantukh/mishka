@@ -1,0 +1,17 @@
+.main-form__description {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: $color-grey-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

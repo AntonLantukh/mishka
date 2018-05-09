@@ -1,0 +1,16 @@
+.page-title__header {
+  font-size: 27px;
+  line-height: 30px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: $color-black;
+}
+
+@media (min-width: $tablet-width) {
+  font-size: 43px;
+  line-height: 50px;
+}
+
+@media (min-width: $desktop-width) {
+  font-size: 53px;
+  line-height: 57px;
+}

@@ -14,7 +14,7 @@
 
 .reviews__author {
   font-size: 17px;
-  line-height: 30px;
+  line-height: 24px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: $color-black;
 }
@@ -24,4 +24,30 @@
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
   color: $color-grey-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__header {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+  }
+
+  .reviews__author {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__header {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__author {
+    font-size: 17px;
+  }
 }

@@ -1,0 +1,49 @@
+.form-group__title {
+  font-size: 17px;
+  line-height: 16px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: $color-light-green;
+  text-transform: uppercase;
+}
+
+.form-group__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: $color-black;
+}
+
+.form-group__input {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+}
+
+.form-group__note {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: $color-grey-light;
+}
+
+@media (min-width: $tablet-width) {
+  .form-group__title {
+    line-height: 30px;
+  }
+
+  .form-group__label {
+    font-size: 19px;
+  }
+
+  .form-group__input {
+    font-size: 19px;
+  }
+
+  .form-group__note {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+@media (min-width: $desktop-width) {
+
+}

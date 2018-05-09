@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Мишка</title>
 </head>
 <body>
@@ -44,52 +45,52 @@
         <form action="POST">
           <div class="form-group form-group--type">
             <h2 class="form-group__title">Тип</h2>
-            <input class="form-group__radio-input" name="type" type="radio" id="interior" checked>
-            <label class="form-group__radio-label" for="interior">Аксессуар для интерьера</label>
-            <input class="form-group__radio-input" name="type" type="radio" id="toy">
-            <label class="form-group__radio-label" for="toy">Детская игрушка</label>
+            <input class="form-group__input form-group__input--radio" name="type" type="radio" id="interior" checked>
+            <label class="form-group__label form-group__label--radio" for="interior">Аксессуар для интерьера</label>
+            <input class="form-group__input form-group__input--radio" name="type" type="radio" id="toy">
+            <label class="form-group__label form-group__label--radio" for="toy">Детская игрушка</label>
           </div>
           <div class="form-group form-group--color">
             <h2 class="form-group__title">Цвет</h2>
-            <input class="form-group__checkbox-input" name="white" type="checkbox" id="white" checked>
-            <label class="form-group__checkbox-label" for="white">Белый</label>
-            <input class="form-group__checkbox-input" name="grey" type="checkbox" id="grey" checked>
-            <label class="form-group__checkbox-label" for="grey">Серый</label>
-            <input class="form-group__checkbox-input" name="tiffani" type="checkbox" id="tiffani" checked>
-            <label class="form-group__checkbox-label" for="tiffani">«Тиффани»</label>
-            <input class="form-group__checkbox-input" name="black" type="checkbox" id="black" checked>
-            <label class="form-group__checkbox-label" for="black">Черный</label>
-            <input class="form-group__checkbox-input" name="pink" type="checkbox" id="pink" checked>
-            <label class="form-group__checkbox-label" for="pink">Розовый</label>
-            <input class="form-group__checkbox-input" name="orange" type="checkbox" id="orange" checked>
-            <label class="form-group__checkbox-label" for="orange">Оранжевый</label>
+            <input class="form-group__input form-group__input--checkbox" name="white" type="checkbox" id="white" checked>
+            <label class="form-group__label form-group__label--checkbox" for="white">Белый</label>
+            <input class="form-group__input form-group__input--checkbox" name="grey" type="checkbox" id="grey" checked>
+            <label class="form-group__label form-group__label--checkbox" for="grey">Серый</label>
+            <input class="form-group__input form-group__input--checkbox" name="tiffani" type="checkbox" id="tiffani" checked>
+            <label class="form-group__label form-group__label--checkbox" for="tiffani">«Тиффани»</label>
+            <input class="form-group__input form-group__input--checkbox" name="black" type="checkbox" id="black" checked>
+            <label class="form-group__label form-group__label--checkbox" for="black">Черный</label>
+            <input class="form-group__input form-group__input--checkbox" name="pink" type="checkbox" id="pink" checked>
+            <label class="form-group__label form-group__label--checkbox" for="pink">Розовый</label>
+            <input class="form-group__input form-group__input--checkbox" name="orange" type="checkbox" id="orange" checked>
+            <label class="form-group__label form-group__label--checkbox" for="orange">Оранжевый</label>
           </div>
           <div class="form-group form-group--name">
             <h2 class="form-group__title">ФИО</h2>
-            <label class="form-group__input-label" for="name">Имя:</label>
+            <label class="form-group__label form-group__label--input" for="name">Имя:</label>
             <input class="form-group__input form-group__input--name" name="name" type="text" id="name" placeholder="Введите ваше имя *" required>
-            <label class="form-group__input-label" for="surname">Фамилия:</label>
+            <label class="form-group__label form-group__label--input" for="surname">Фамилия:</label>
             <input class="form-group__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
-            <label class="form-group__input-label" for="second-name">Отчество:</label>
+            <label class="form-group__label form-group__label--input" for="second-name">Отчество:</label>
             <input class="form-group__input" name="second-name" type="text" id="second-name" placeholder="Отчество, если желаете">
           </div>
           <div class="form-group form-group--phone">
             <h2 class="form-group__title">Тел</h2>
-            <label class="form-group__input-label form-group__input-label--phone" for="phone">Phone</label>
+            <label class="form-group__label form-group__label--input" for="phone">Phone</label>
             <input class="form-group__input form-group__input--phone" name="phone" type="tel" id="phone" placeholder="+7 XXX XX XX*">
           </div>
           <div class="form-group form-group--email">
             <h2 class="form-group__title">Тел</h2>
-            <label class="form-group__input-label form-group__input-label--phone" for="email">Email</label>
+            <label class="form-group__label form-group__label--input" for="email">Email</label>
             <input class="form-group__input form-group__input--phone" name="email" type="email" id="email" placeholder="Ваш Email*">
           </div>
           <div class="main-form__emotions form-group">
             <h2 class="form-group__title">Доп</h2>
-            <label class="form-group__input-label visually-hidden" for="emotions">Эмоции</label>
+            <label class="form-group__label form-group__label--input visually-hidden" for="emotions">Эмоции</label>
             <textarea class="form-group__input form-group__input--wide" name="emotions" id="emotions" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             <span class="form-group__note">*Поля обязательны для заполнения">
           </div>
-          <input class="main-form__button" type="submit" value="Отправить заказ">
+          <input class="main-form__button main-button" type="submit" value="Отправить заказ">
         </form>
       </div>
     </article>

@@ -3,4 +3,10 @@
   line-height: 20px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: $color-grey-dark;
+  text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .main-button {
+    line-height: 16px;
+  }

@@ -9,10 +9,13 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 
 gulp.task('styles', function() {
-  return gulp.src('source/**/style.scss')
+  return gulp.src('source/sass/style.scss')
     .pipe(sass())
     .pipe(autoprefixer())
-    .pipe(gulp.dest('build'));
+    .pipe(minify())
+    .pipe(gulp.dest('source/css/'))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css/'));
 });
 
 gulp.task('html', function() {
@@ -34,8 +37,8 @@ gulp.task('serve', function() {
     server: 'build'
   });
 
-  gulp.watch("source/**/*.scss", ['styles']);
-  gulp.watch("source/**/*.html", ['html']);
+  gulp.watch("source/**/*.scss", gulp.series('clean','styles'));
+  gulp.watch("source/**/*.html", gulp.series('clean','html'));
 });
 
 gulp.task(`build`, gulp.series('clean', gulp.parallel('styles', 'html', 'assets')));

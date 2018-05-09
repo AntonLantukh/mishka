@@ -11,3 +11,22 @@
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: $color-white;
 }
+
+@media (min-width: $tablet-width) {
+  .page-about__header {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-about__element {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-about__header {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

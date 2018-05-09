@@ -4,3 +4,26 @@
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: $color-black;
 }
+
+@media (min-width: $tablet-width) {
+  .navigation__element {
+    font-size: 15px;
+  }
+
+  .navigation__element--cart {
+    font-size: 17px;
+    line-height: 24px;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    color: $color-black;
+  }
+
+  .goods__price {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__element {
+    font-size: 17px;
+  }
+}
