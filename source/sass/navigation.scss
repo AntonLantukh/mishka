@@ -1,8 +1,27 @@
+.navigаtion__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .navigation__element {
+  margin: 0 auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navigation__element:nth-of-type(4) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navigation__link {
+  display: block;
+  padding: 28px 0 28px 0;
   font-size: 17px;
   line-height: 24px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: $color-black;
+  text-align: center;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {

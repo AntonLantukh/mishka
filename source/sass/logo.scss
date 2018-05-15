@@ -1,0 +1,42 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 30px 0 30px;
+}
+
+.logo__image {
+  display: block;
+  margin-left: 30%;
+  margin: 0 auto;
+  padding: 26px 0 26px 0;
+}
+
+.logo__cross {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 -30px;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 30px;
+    transform: rotate(45deg);
+    content: "";
+    background-color: rgb(0, 0, 0);
+  }
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 30px;
+    transform: rotate(-45deg);
+    content: "";
+    background-color: rgb(0, 0, 0);
+  }
+}
