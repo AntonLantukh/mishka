@@ -11,10 +11,14 @@
   <header class="main-header">
     <div class="main-header__logo logo">
       <img class="logo__image" src="./img/logo-mobile.svg" alt="Лого" class="header__logo">
-      <div class="logo__burger"></div>
-      <div class="logo__cross"></div>
+      <div class="logo__burger-wrapper">
+        <div class="logo__burger"></div>
+      </div>
+      <div class="logo__cross-wrapper visually-hidden">
+        <div class="logo__cross"></div>
+      </div>
     </div>
-    <nav class="main-header__navigation navigation">
+    <nav class="main-header__navigation navigation visually-hidden">
       <ul class="navigаtion__list">
         <li class="navigation__element">
           <a class="navigation__link" href="#">Катaлог товаров</a>
@@ -36,8 +40,12 @@
       <div class="page-about__wrapper">
         <h1 class="page-about__header">Милые штуки ручной <br> работы для дома</h1>
       </div>
-      <div class="page-about__element">Предметы интерьера</div>
-      <div class="page-about__element">Детские игрушки</div>
+      <div class="page-about__container page-about__container--interior">
+        <div class="page-about__element page-about__element--interior">Предметы интерьера</div>
+      </div>
+      <div class="page-about__container page-about__container--toy">
+        <div class="page-about__element page-about__element--toy">Детские игрушки</div>
+      </div>
     </article>
     <article class="offer">
       <div class="offer__wrapper">

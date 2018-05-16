@@ -12,12 +12,15 @@
   padding: 26px 0 26px 0;
 }
 
-.logo__cross {
+.logo__cross-wrapper {
   position: relative;
   width: 30px;
   height: 30px;
   margin: 0 0 0 -30px;
+  cursor: pointer;
+}
 
+.logo__cross {
   &::before {
     position: absolute;
     left: 50%;
@@ -36,6 +39,40 @@
     width: 2px;
     height: 30px;
     transform: rotate(-45deg);
+    content: "";
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+.logo__burger-wrapper {
+  position: relative;
+  width: 22px;
+  height: 16px;
+  margin: 0 0 0 -30px;
+  cursor: pointer;
+}
+
+.logo__burger {
+  margin: 36% 0;
+  width: 22px;
+  height: 2px;
+  content: "";
+  background-color: rgb(0, 0, 0);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    width: 22px;
+    height: 2px;
+    content: "";
+    background-color: rgb(0, 0, 0);
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    width: 22px;
+    height: 2px;
     content: "";
     background-color: rgb(0, 0, 0);
   }
