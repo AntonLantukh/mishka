@@ -34,7 +34,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-about__wrapper {
+    min-height: 626px;
+    background-image: url('../img/dec-hero-tablet@1x.jpg');
+    background-position-y: 10%;
+  }
+
   .page-about__header {
+    width: 520px;
     font-size: 43px;
     line-height: 50px;
   }

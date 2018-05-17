@@ -10,27 +10,40 @@
 <body>
   <header class="main-header">
     <div class="main-header__logo logo">
-      <img class="logo__image" src="./img/logo-mobile.svg" alt="Лого" class="header__logo">
-      <div class="logo__burger-wrapper">
+      <picture>
+        <source media="(min-width: 1248px)" srcset="./img/logo-desktop.svg 1x">
+        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg 1x">
+        <img class="logo__image" src="./img/logo-mobile.svg" alt="Лого">
+      </picture>
+      <div class="logo__burger-wrapper visually-hidden">
         <div class="logo__burger"></div>
       </div>
-      <div class="logo__cross-wrapper visually-hidden">
+      <div class="logo__cross-wrapper">
         <div class="logo__cross"></div>
       </div>
     </div>
-    <nav class="main-header__navigation navigation visually-hidden">
+    <nav class="main-header__navigation navigation">
       <ul class="navigаtion__list">
-        <li class="navigation__element">
-          <a class="navigation__link" href="#">Катaлог товаров</a>
+        <li class="navigation__element navigation__element--catalog">
+          <a class="navigation__link navigation__link--catalog" href="#">Катaлог товаров</a>
         </li>
-        <li class="navigation__element">
-          <a class="navigation__link" href="#">Вязание на заказ</a>
+        <li class="navigation__element navigation__element--special">
+          <a class="navigation__link navigation__link--special" href="#">Вязание на заказ</a>
         </li>
-        <li class="navigation__element">
-          <a class="navigation__link" href="#">Поиск по сайту</a>
+        <li class="navigation__element navigation__element--search">
+          <a class="navigation__link" href="#">
+            <img class="navigation__image navigation__image--search" src="./img/icon-search.svg" alt="Поиск">
+            <span class="navigation__text navigation__text--search">Поиск по сайту</span>
+          </a>
         </li>
         <li class="navigation__element navigation__element--cart">
-          <a class="navigation__link" href="#">Корзина: пока пуста</a>
+          <a class="navigation__link" href="#">
+            <img class="navigation__image navigation__image--cart" src="./img/icon-cart.svg" alt="Корзина">
+            <span class="navigation__text navigation__text--cart">Корзина: пока пуста</span>
+          </a>
+        </li>
+        <li class="navigation__element navigation__element--delivery">
+          Бесплатная доставка по России
         </li>
       </ul>
     </nav>
@@ -38,7 +51,7 @@
   <main>
     <article class="page-about">
       <div class="page-about__wrapper">
-        <h1 class="page-about__header">Милые штуки ручной <br> работы для дома</h1>
+        <h1 class="page-about__header">Милые штуки ручной работы для дома</h1>
       </div>
       <div class="page-about__container page-about__container--interior">
         <div class="page-about__element page-about__element--interior">Предметы интерьера</div>
