@@ -15,14 +15,14 @@
         <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg 1x">
         <img class="logo__image" src="./img/logo-mobile.svg" alt="Лого">
       </picture>
-      <div class="logo__burger-wrapper visually-hidden">
+      <div class="logo__burger-wrapper">
         <div class="logo__burger"></div>
       </div>
-      <div class="logo__cross-wrapper">
+      <div class="logo__cross-wrapper logo__closed">
         <div class="logo__cross"></div>
       </div>
     </div>
-    <nav class="main-header__navigation navigation">
+    <nav class="main-header__navigation navigation visually-hidden">
       <ul class="navigаtion__list">
         <li class="navigation__element navigation__element--catalog">
           <a class="navigation__link navigation__link--catalog" href="#">Катaлог товаров</a>
@@ -53,11 +53,9 @@
       <div class="page-about__wrapper">
         <h1 class="page-about__header">Милые штуки ручной работы для дома</h1>
       </div>
-      <div class="page-about__container page-about__container--interior">
-        <div class="page-about__element page-about__element--interior">Предметы интерьера</div>
-      </div>
-      <div class="page-about__container page-about__container--toy">
-        <div class="page-about__element page-about__element--toy">Детские игрушки</div>
+      <div class="page-about__container">
+        <p class="page-about__element page-about__element--interior">Предметы<br> интерьера</p>
+        <p class="page-about__element page-about__element--toy">Детские<br> игрушки</p>
       </div>
     </article>
     <article class="offer">
@@ -148,5 +146,7 @@
       <img class="madeby__image" src="#" alt="HTMLAcademy">
     </section>
   </footer>
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./js/header.js"></script>
 </body>
 </html>

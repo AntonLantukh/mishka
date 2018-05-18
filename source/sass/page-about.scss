@@ -15,17 +15,15 @@
   text-align: center;
 }
 
-.page-about__container--interior {
-  background-color: $color-light-green;
-}
-
-.page-about__container--toy {
-  background-color: $color-dark-green;
+.page-about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page-about__element {
-  width: 130px;
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
   padding: 30px 160px 30px 30px;
   font-size: 19px;
   line-height: 24px;
@@ -33,9 +31,17 @@
   color: $color-white;
 }
 
+.page-about__element--interior {
+  background-color: $color-light-green;
+}
+
+.page-about__element--toy {
+  background-color: $color-dark-green;
+}
+
 @media (min-width: $tablet-width) {
   .page-about__wrapper {
-    min-height: 626px;
+    min-height: 620px;
     background-image: url('../img/dec-hero-tablet@1x.jpg');
     background-position-y: 10%;
   }
@@ -44,6 +50,11 @@
     width: 520px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .page-about__container {
+    display: flex;
+    flex-direction: row;
   }
 
   .page-about__element {
