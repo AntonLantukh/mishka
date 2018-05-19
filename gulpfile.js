@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 const del = require('del');
 const htmlmin = require("gulp-htmlmin");
+const webp = require("gulp-webp");
 const notify = require("gulp-notify");
 const plumber = require("gulp-plumber");
 const browserSync = require('browser-sync').create();
@@ -38,8 +39,14 @@ gulp.task("html", function () {
 });
 
 gulp.task('assets', function() {
-  return gulp.src('source/**/*.{woff,woff2,svg,jpg,png,js}')
+  return gulp.src('source/**/*.{woff,woff2,svg,js,jpg,png}')
     .pipe(gulp.dest('build'));
+})
+
+gulp.task('webp', function() {
+  return gulp.src('source/img/*.{jpg,png}')
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest('build/img'));
 })
 
 gulp.task('clean', function() {
@@ -56,4 +63,4 @@ gulp.task('serve', function() {
   browserSync.watch('build/**/*.*').on('change', browserSync.reload);
 });
 
-gulp.task(`build`, gulp.series('clean', gulp.parallel('styles', 'html', 'assets')));
+gulp.task(`build`, gulp.series('clean', gulp.parallel('styles', 'html', 'assets', 'webp')));

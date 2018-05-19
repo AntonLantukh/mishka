@@ -10,19 +10,21 @@
 <body>
   <header class="main-header">
     <div class="main-header__logo logo">
-      <picture>
-        <source media="(min-width: 1248px)" srcset="./img/logo-desktop.svg 1x">
-        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg 1x">
-        <img class="logo__image" src="./img/logo-mobile.svg" alt="Лого">
-      </picture>
-      <div class="logo__burger-wrapper">
+      <a class="logo__link">
+        <picture class="logo__image">
+          <source media="(min-width: 1248px)" srcset="./img/logo-desktop.svg 1x">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg 1x">
+          <img src="./img/logo-mobile.svg" alt="Лого">
+        </picture>
+      </a>
+      <div class="logo__burger-wrapper logo--no-js">
         <div class="logo__burger"></div>
       </div>
       <div class="logo__cross-wrapper logo__closed">
         <div class="logo__cross"></div>
       </div>
     </div>
-    <nav class="main-header__navigation navigation visually-hidden">
+    <nav class="main-header__navigation navigation navigation--no-js navigation--closed">
       <ul class="navigаtion__list">
         <li class="navigation__element navigation__element--catalog">
           <a class="navigation__link navigation__link--catalog" href="#">Катaлог товаров</a>
@@ -31,16 +33,22 @@
           <a class="navigation__link navigation__link--special" href="#">Вязание на заказ</a>
         </li>
         <li class="navigation__element navigation__element--search">
-          <a class="navigation__link" href="#">
+          <a class="navigation__link navigation__link--search" href="#">
             <img class="navigation__image navigation__image--search" src="./img/icon-search.svg" alt="Поиск">
             <span class="navigation__text navigation__text--search">Поиск по сайту</span>
           </a>
         </li>
         <li class="navigation__element navigation__element--cart">
-          <a class="navigation__link" href="#">
+          <a class="navigation__link navigation__link--cart" href="#">
             <img class="navigation__image navigation__image--cart" src="./img/icon-cart.svg" alt="Корзина">
             <span class="navigation__text navigation__text--cart">Корзина: пока пуста</span>
           </a>
+        </li>
+        <li class="navigation__element navigation__element--new">
+          <a class="navigation__link navigation__link--new" href="#">Новые поступления</a>
+        </li>
+        <li class="navigation__element navigation__element--sale">
+          <a class="navigation__link navigation__link--sale" href="#">Распродажа</a>
         </li>
         <li class="navigation__element navigation__element--delivery">
           Бесплатная доставка по России
@@ -51,7 +59,7 @@
   <main>
     <article class="page-about">
       <div class="page-about__wrapper">
-        <h1 class="page-about__header">Милые штуки ручной работы для дома</h1>
+        <h1 class="page-about__header">Милые штуки <span class="page-about__inline">ручной</span> работы для дома</h1>
       </div>
       <div class="page-about__container">
         <p class="page-about__element page-about__element--interior">Предметы<br> интерьера</p>
@@ -67,18 +75,25 @@
         <table class="offer__stats">
           <tr class="offer__stats-row">
             <td class="offer__stats-column">Цвет:</td>
-            <td class="offer__stats-column">«Тиффани»/серый</td>
+            <td class="offer__stats-column offer__stats-column--right">«Тиффани»/серый</td>
           </tr>
           <tr class="offer__stats-row">
             <td class="offer__stats-column">Диаметр:</td>
-            <td class="offer__stats-column">25 см</td>
+            <td class="offer__stats-column offer__stats-column--right">25 см</td>
           </tr>
           <tr class="offer__stats-row">
             <td class="offer__stats-column">Высота:</td>
-            <td class="offer__stats-column">15 см</td>
+            <td class="offer__stats-column offer__stats-column--right">15 см</td>
           </tr>
         </table>
-        <img src="#" alt="Корзинки" class="offer__image">
+        <picture>
+          <source type="image/webp" media="(min-width: 1248px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@1x.webp 2x">
+          <source media="(min-width: 1248px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="offer__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Корзинки">
+        </picture>
         <span class="offer__price">Цена: 990 руб.</span>
         <button class="offer__order-button main-button">Заказать</button>
       </div>
@@ -146,7 +161,6 @@
       <img class="madeby__image" src="#" alt="HTMLAcademy">
     </section>
   </footer>
-  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="./js/header.js"></script>
 </body>
 </html>

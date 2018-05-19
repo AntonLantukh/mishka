@@ -8,3 +8,9 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: block;
+  }
+}
