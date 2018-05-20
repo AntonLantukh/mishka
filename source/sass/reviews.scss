@@ -1,4 +1,13 @@
+.reviews {
+  margin: 0 30px;
+}
+
+.reviews__wrapper {
+  font-size: 0;
+}
+
 .reviews__header {
+  margin: 0 0 24px 0;
   font-size: 25px;
   line-height: 30px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -6,6 +15,7 @@
 }
 
 .reviews__text {
+  margin: 0 0 27px 0;
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
@@ -13,6 +23,8 @@
 }
 
 .reviews__author {
+  display: block;
+  margin-bottom: 4px;
   font-size: 17px;
   line-height: 24px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -20,10 +32,45 @@
 }
 
 .reviews__hash {
+  display: block;
+  margin-bottom: 30px;
   font-size: 17px;
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
   color: $color-grey-dark;
+}
+
+.reviews__button {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  margin-bottom: 37px;
+  padding: 0;
+  border: 0;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+
+  &::before {
+    position: absolute;
+    width: 50px;
+    height: 26px;
+    content: "";
+  }
+}
+
+.reviews__button--left {
+  &::before {
+    background-image: url('../img/huge-arrow-left.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__button--right {
+  &::before {
+    background-image: url('../img/huge-arrow-right.svg');
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {

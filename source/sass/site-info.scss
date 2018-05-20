@@ -1,32 +1,160 @@
+.site-info {
+  margin: 0 30px 55px 30px;
+}
+
 .site-info__header {
+  margin: 0;
+  margin-bottom: 86px;
   font-size: 25px;
   line-height: 30px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: $color-black;
 }
 
+.site-info__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .site-info__element {
+  position: relative;
+  width: 256px;
+  padding-bottom: 83px;
   font-size: 17px;
   line-height: 20px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: $color-black;
+
+  &::before {
+    position: absolute;
+    width: 55px;
+    height: 45px;
+    content: "";
+    background-repeat: no-repeat;
+  }
+}
+
+.site-info__element:nth-child(6) {
+  padding: 0;
+}
+
+.site-info__element--ecology {
+  &::before {
+    top: -45%;
+    left: 3%;
+    background-image: url('../img/feature-flower.svg');
+  }
+}
+
+.site-info__element--style {
+  &::before {
+    top: -45%;
+    left: 0;
+    background-image: url('../img/feature-money.svg');
+  }
+}
+
+.site-info__element--likes {
+  &::before {
+    top: -38%;
+    left: 3%;
+    background-image: url('../img/feature-heart.svg');
+  }
+}
+
+.site-info__element--love {
+  &::before {
+    top: -42%;
+    left: 1%;
+    background-image: url('../img/feature-ball.svg');
+  }
+}
+
+.site-info__element--support {
+  &::before {
+    top: -41%;
+    left: -2%;
+    background-image: url('../img/feature-rocket.svg');
+  }
+}
+
+.site-info__element--delivery {
+  &::before {
+    top: -42%;
+    left: 1%;
+    background-image: url('../img/feature-gift.svg');
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .site-info {
+    margin: 0 85px 0 50px;
+  }
+
   .site-info__header {
+    margin: 0 0 103px -6px;
     font-size: 43px;
     line-height: 50px;
   }
 
+  .site-info__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
   .site-info__element {
+    flex-basis: 300px;
+    padding-bottom: 111px;
     font-size: 20px;
     line-height: 22px;
+
+    &::before {
+      top: -33%;
+    }
+  }
+
+  .site-info__element--ecology {
+    order: 1;
+  }
+
+  .site-info__element--style {
+    order: 3;
+  }
+
+  .site-info__element--likes {
+    order: 5;
+  }
+
+  .site-info__element--love {
+    order: 2;
+  }
+
+  .site-info__element--support {
+    order: 4;
+  }
+
+  .site-info__element--delivery {
+    order: 6;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-info__header {
+    margin-left: 220px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .site-info__list {
+    justify-content: space-between;
+    margin: 0 239px 0 226px;
   }
 }

@@ -60,53 +60,59 @@
     <article class="page-about">
       <div class="page-about__wrapper">
         <h1 class="page-about__header">Милые штуки <span class="page-about__inline">ручной</span> работы для дома</h1>
-      </div>
-      <div class="page-about__container">
-        <p class="page-about__element page-about__element--interior">Предметы<br> интерьера</p>
-        <p class="page-about__element page-about__element--toy">Детские<br> игрушки</p>
+        <div class="page-about__container">
+          <p class="page-about__element page-about__element--interior">Предметы<br> интерьера</p>
+          <p class="page-about__element page-about__element--toy">Детские<br> игрушки</p>
+        </div>
       </div>
     </article>
     <article class="offer">
-      <div class="offer__wrapper">
-        <h2 class="offer__header">Вязаные корзинки</h2>
-        <span class="offer__status">Товар недели</span>
-        <p class="offer__description">Экологически чистая пряжа, ручная работа.
-          Доступна в шести расцветках, и трех размерах.</p>
-        <table class="offer__stats">
-          <tr class="offer__stats-row">
-            <td class="offer__stats-column">Цвет:</td>
-            <td class="offer__stats-column offer__stats-column--right">«Тиффани»/серый</td>
-          </tr>
-          <tr class="offer__stats-row">
-            <td class="offer__stats-column">Диаметр:</td>
-            <td class="offer__stats-column offer__stats-column--right">25 см</td>
-          </tr>
-          <tr class="offer__stats-row">
-            <td class="offer__stats-column">Высота:</td>
-            <td class="offer__stats-column offer__stats-column--right">15 см</td>
-          </tr>
-        </table>
-        <picture>
-          <source type="image/webp" media="(min-width: 1248px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.jpg 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@1x.webp 2x">
-          <source media="(min-width: 1248px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-          <img class="offer__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Корзинки">
-        </picture>
-        <span class="offer__price">Цена: 990 руб.</span>
-        <button class="offer__order-button main-button">Заказать</button>
+      <h2 class="offer__header">Вязаные корзинки</h2>
+      <span class="offer__status">Товар недели</span>
+      <div class ="offer__container">
+        <div class="offer__wrapper">
+          <p class="offer__description">Экологически чистая пряжа, ручная работа.
+            Доступна в шести расцветках, и трех размерах.</p>
+          <table class="offer__stats">
+            <tr class="offer__stats-row">
+              <td class="offer__stats-column">Цвет:</td>
+              <td class="offer__stats-column offer__stats-column--right">«Тиффани»/серый</td>
+            </tr>
+            <tr class="offer__stats-row">
+              <td class="offer__stats-column">Диаметр:</td>
+              <td class="offer__stats-column offer__stats-column--right">25 см</td>
+            </tr>
+            <tr class="offer__stats-row">
+              <td class="offer__stats-column">Высота:</td>
+              <td class="offer__stats-column offer__stats-column--right">15 см</td>
+            </tr>
+          </table>
+        </div>
+        <div class="offer__wrapper offer__wrapper--price">
+          <span class="offer__price">Цена: 990 руб.</span>
+          <button class="offer__order-button main-button">Заказать</button>
+        </div>
+        <div class="offer__wrapper offer__wrapper--picture">
+          <picture class="offer__image">
+            <source type="image/webp" media="(min-width: 1248px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@1x.webp 2x">
+            <source media="(min-width: 1248px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="offer__src" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Корзинки">
+          </picture>
+        </div>
       </div>
     </article>
     <article class="site-info">
       <h2 class="site-info__header">Коротко о нас:</h2>
       <ul class="site-info__list">
-        <li class="site-info__element">Экологически чистые материалы</li>
-        <li class="site-info__element">Скандинавский стиль по российской цене</li>
-        <li class="site-info__element">Увеличивает лайки на фотографиях</li>
-        <li class="site-info__element">Связано вручную с любовью и умилением</li>
-        <li class="site-info__element">Поддержка отечественного производителя</li>
-        <li class="site-info__element">Поставляется в подарочной упаковке</li>
+        <li class="site-info__element site-info__element--ecology">Экологически <br> чистые материалы</li>
+        <li class="site-info__element site-info__element--style">Скандинавский стиль <br> по российской цене</li>
+        <li class="site-info__element site-info__element--likes">Увеличивает лайки <br> на фотографиях</li>
+        <li class="site-info__element site-info__element--love">Связано вручную с любовью и умилением</li>
+        <li class="site-info__element site-info__element--support">Поддержка отечественного производителя</li>
+        <li class="site-info__element site-info__element--delivery">Поставляется в <br> подарочной упаковке</li>
       </ul>
     </article>
     <article class="reviews">
@@ -124,7 +130,7 @@
           больше лайков!
         </p>
         <span class="reviews__author">Анастасия Красильникова</span>
-        <span class="reviews__hash">@missssssiskras</span>
+        <span class="reviews__hash">@misssssiskras</span>
         <button class="reviews__button reviews__button--left">Влево</button>
         <button class="reviews__button reviews__button--right">Вправо</button>
         <button class="reviews__button-write main-button">Написать</button>

@@ -1,9 +1,13 @@
 .main-button {
+  width: 100%;
+  padding: 14px 0;
   font-size: 17px;
   line-height: 20px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: $color-grey-dark;
   text-transform: uppercase;
+  background: none;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 @media (min-width: $tablet-width) {
