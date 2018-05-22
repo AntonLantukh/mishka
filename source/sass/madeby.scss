@@ -1,4 +1,14 @@
+.madeby {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 67px;
+  padding: 20px 0 30px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .madeby__description {
+  display: inline-block;
   font-size: 19px;
   line-height: 18px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
